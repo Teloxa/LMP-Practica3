@@ -1,18 +1,16 @@
 <!-- En el template le falta codigo de la grabacion del 25 y de hoy 28 -->
 <template>
-  <DefaultLayout>
-      <v-btn color="green" icon @click="edit(item)">
-          <v-icon>mdi-pencil</v-icon>
-      </v-btn>
+<DefaultLayout>
+    <v-btn color="green" icon @click="edit(item)">
+        <v-icon>mdi-pencil</v-icon>
+    </v-btn>
 
-      <v-btn color="red" icon @click="remove(item.id)">
-          <v-icon>mdi-delete</v-icon>
-      </v-btn>
-
-
-      
+    <v-btn color="red" icon @click="remove(item.id)">
+        <v-icon>mdi-delete</v-icon>
+    </v-btn>
 
 
+    
 
 
 
@@ -26,9 +24,11 @@
 
 
 
-  <!-- aqui faltan 2-3 etiquetas, no recuerdo -->
-      <EmpleadoForm v-model="showForm" :empleado="selected" @saved="onsSaved" />
-  </DefaultLayout>
+
+
+<!-- aqui faltan 2-3 etiquetas, no recuerdo -->
+    <EmpleadoForm v-model="showForm" :empleado="selected" @saved="onsSaved" />
+</DefaultLayout>
 </template>
 
 <script setup>
