@@ -11,12 +11,12 @@ export const useAuthStore = defineStore('auth', {
     actions: {
         async login(credentials) {
         try {
-                const token = await loginRequest(credentials)
-                localStorage.setItem('token', token.token)
-                router.push('/dashboard')
-            } catch (error) {
-                console.error(error)
-                alert('Credenciales incorrectas')
+            const token = await loginRequest(credentials)
+            localStorage.setItem('token', token.token)
+            router.push('/dashboard')
+        } catch (error) {
+            console.error(error)
+            alert('Credenciales incorrectas')
             }
         },
         async register(payload) {
