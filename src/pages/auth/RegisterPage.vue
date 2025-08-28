@@ -1,3 +1,4 @@
+<!-- INCOMPLETO - me falta terminar el codigo. Grabacion del 25/08 -->
 <template>
 <AuthLayout>
     <v-card class="text-h6">
