@@ -1,7 +1,6 @@
-import { defineStore } from "pinia";
-import { loginRequest, registerRequest} from '@/services/authService.js';
-// import router from '../router/index.js'
-import router from "@/router";
+import { defineStore } from "pinia"
+import { loginRequest, registerRequest} from '@/services/authService.js'
+import router from "@/router"
 
 export const useAuthStore = defineStore('auth', {
     state: () => ({
@@ -33,5 +32,5 @@ export const useAuthStore = defineStore('auth', {
             localStorage.removeItem('token')
             router.push('/')
         },
-    }
+    },
 })

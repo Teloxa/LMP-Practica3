@@ -25,7 +25,6 @@ const router = createRouter({
   ],
 })
 
-
 // Funcion del middleware
 router.beforeEach((to, _from, next) => {
   const token = localStorage.getItem('token')
