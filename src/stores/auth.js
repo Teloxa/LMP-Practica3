@@ -11,7 +11,7 @@ export const useAuthStore = defineStore('auth', {
         async login(credentials) {
         try {
             const token = await loginRequest(credentials)
-            localStorage.setItem('token', token.token)
+            localStorage.setItem('token', token.token.token)
             router.push('/dashboard')
         } catch (error) {
             console.error(error)

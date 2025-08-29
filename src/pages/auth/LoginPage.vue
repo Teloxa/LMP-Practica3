@@ -1,6 +1,6 @@
 <template>
   <AuthLayout >
-    <v-card width="500" color="blue-grey lighten-5" >
+    <v-card width="500" >
         <v-card-title class="text-h6">Iniciar sesion</v-card-title>
         <v-card-text>
             <v-form @submit.prevent="submit">
